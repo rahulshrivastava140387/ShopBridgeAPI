@@ -133,3 +133,6 @@ C:\Users\Rahul Shrivastava\source\repos\ShopBridgeAPI\obj\Debug\net5.0\ShopBridg
 C:\Users\Rahul Shrivastava\source\repos\ShopBridgeAPI\obj\Debug\net5.0\ref\ShopBridgeAPI.dll
 C:\Users\Rahul Shrivastava\source\repos\ShopBridgeAPI\obj\Debug\net5.0\ShopBridgeAPI.pdb
 C:\Users\Rahul Shrivastava\source\repos\ShopBridgeAPI\obj\Debug\net5.0\ShopBridgeAPI.genruntimeconfig.cache
+C:\Users\Rahul Shrivastava\source\repos\ShopBridgeAPI\bin\Debug\net5.0\System.Drawing.Common.dll
+C:\Users\Rahul Shrivastava\source\repos\ShopBridgeAPI\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\Rahul Shrivastava\source\repos\ShopBridgeAPI\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll

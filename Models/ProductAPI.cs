@@ -1,5 +1,4 @@
-﻿using Microsoft.AspNetCore.Http;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -7,10 +6,8 @@ using System.Threading.Tasks;
 
 namespace ShopBridgeAPI.Models
 {
-    public class Product
+    public class ProductAPI : EditImage
     {
-        [Required, Key]
-        public int productID { get; set; }
         [Required]
         [StringLength(100)]
         public string productName { get; set; }
@@ -24,7 +21,5 @@ namespace ShopBridgeAPI.Models
         public double productPrice { get; set; }
         [Required]
         public double productQuantity { get; set; }
-        [Required]
-        public string productImage { get; set; }
     }
 }

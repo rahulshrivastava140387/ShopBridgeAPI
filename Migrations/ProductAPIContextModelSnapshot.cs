@@ -20,24 +20,37 @@ namespace ShopBridgeAPI.Migrations
 
             modelBuilder.Entity("ShopBridgeAPI.Models.Product", b =>
                 {
-                    b.Property<int>("ID")
+                    b.Property<int>("productID")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("productCategory")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
                     b.Property<string>("productDescription")
+                        .IsRequired()
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.Property<string>("productImage")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("productName")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
                     b.Property<double>("productPrice")
                         .HasColumnType("float");
 
-                    b.HasKey("ID");
+                    b.Property<double>("productQuantity")
+                        .HasColumnType("float");
+
+                    b.HasKey("productID");
 
                     b.ToTable("Product");
                 });
