@@ -2,7 +2,9 @@
 
 Platform independent Web API calls to insert, update, delete and list products.
 
-Features:
+Solution can be downloaded or cloned and run directly. The interface will show swagger interface to run REST APIs.
+
+List of APIs:
 
 1. Add Product.
 2. Update Product.
@@ -35,8 +37,8 @@ Response Value Schema :
 
 ### Add Product
 
-Request URL : /api/Products
-Request Body : JSON string
+#Request URL : /api/Products
+#Request Body : JSON string
 [
   {
     "productName": "string",
@@ -47,7 +49,7 @@ Request Body : JSON string
     "inStock": true,
   }
 ]
-Response Value Schema :
+#Response Value Schema :
 [
   {
     "productID": 0,
@@ -64,9 +66,9 @@ Response Value Schema :
 
 ### Get Product By ID
 
-Request URL : /api/Products/{id}
-Request Body : None
-Response Value Schema :
+#Request URL : /api/Products/{id}
+#Request Body : None
+#Response Value Schema :
 [
   {
     "productID": 0,
@@ -83,8 +85,8 @@ Response Value Schema :
 
 ### Update Product
 
-Request URL : /api/Products/{id}
-Request Body : JSON string
+#Request URL : /api/Products/{id}
+#Request Body : JSON string
 [
   {
     "productName": "string",
@@ -98,23 +100,23 @@ Request Body : JSON string
 
 ### Upload Image for a Product
 
-Request URL : /api/Products/uploadimage/{id}
-Request Body : None
-Response : Image uploaded successfully.
+#Request URL : /api/Products/uploadimage/{id}
+#Request Body : None
+#Response : Image uploaded successfully.
 
 ### Add Product Stock
 
-Request URL : /api/Products/addstock/{id}/{quantity}
-Request Body : None
-Response : Stock updated successfully.
+#Request URL : /api/Products/addstock/{id}/{quantity}
+#Request Body : None
+#Response : Stock updated successfully.
 
 ### Book Product
 
-Request URL : /api/Products/booking/{id}/{quantity}
-Request Body : None
-Response : Product booked successfully.
+#Request URL : /api/Products/booking/{id}/{quantity}
+#Request Body : None
+#Response : Product booked successfully.
 
 ### Make Product Out of Stock
 
-Request URL : /api/Products/outofstock/{id}
-Request Body : None
+#Request URL : /api/Products/outofstock/{id}
+#Request Body : None
