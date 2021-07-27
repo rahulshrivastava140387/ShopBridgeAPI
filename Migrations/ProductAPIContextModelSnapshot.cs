@@ -25,6 +25,12 @@ namespace ShopBridgeAPI.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<bool>("inStock")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("isDeleted")
+                        .HasColumnType("bit");
+
                     b.Property<string>("productCategory")
                         .IsRequired()
                         .HasMaxLength(100)
@@ -36,7 +42,6 @@ namespace ShopBridgeAPI.Migrations
                         .HasColumnType("nvarchar(500)");
 
                     b.Property<string>("productImage")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("productName")

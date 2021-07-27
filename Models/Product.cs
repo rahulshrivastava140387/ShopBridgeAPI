@@ -1,9 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
-using System;
-using System.Collections.Generic;
+﻿using System;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace ShopBridgeAPI.Models
 {
@@ -21,10 +17,11 @@ namespace ShopBridgeAPI.Models
         [StringLength(100)]
         public string productCategory { get; set; }
         [Required]
-        public double productPrice { get; set; }
+        public Nullable<double> productPrice { get; set; }
         [Required]
-        public double productQuantity { get; set; }
-        [Required]
+        public Nullable<double> productQuantity { get; set; }
         public string productImage { get; set; }
+        public bool inStock { get; set; }
+        public bool isDeleted { get; set; }
     }
 }

@@ -9,7 +9,7 @@ using ShopBridgeAPI.Data;
 namespace ShopBridgeAPI.Migrations
 {
     [DbContext(typeof(ProductAPIContext))]
-    [Migration("20210725185736_ProductAPIContextDB")]
+    [Migration("20210727194831_ProductAPIContextDB")]
     partial class ProductAPIContextDB
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -27,6 +27,12 @@ namespace ShopBridgeAPI.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<bool>("inStock")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("isDeleted")
+                        .HasColumnType("bit");
+
                     b.Property<string>("productCategory")
                         .IsRequired()
                         .HasMaxLength(100)
@@ -38,7 +44,6 @@ namespace ShopBridgeAPI.Migrations
                         .HasColumnType("nvarchar(500)");
 
                     b.Property<string>("productImage")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("productName")

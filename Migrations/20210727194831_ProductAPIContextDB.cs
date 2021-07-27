@@ -17,7 +17,9 @@ namespace ShopBridgeAPI.Migrations
                     productCategory = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
                     productPrice = table.Column<double>(type: "float", nullable: false),
                     productQuantity = table.Column<double>(type: "float", nullable: false),
-                    productImage = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    productImage = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    inStock = table.Column<bool>(type: "bit", nullable: false),
+                    isDeleted = table.Column<bool>(type: "bit", nullable: false)
                 },
                 constraints: table =>
                 {
