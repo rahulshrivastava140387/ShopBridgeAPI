@@ -120,3 +120,20 @@ Response Value Schema :
 
 #Request URL : /api/Products/outofstock/{id}
 #Request Body : None
+
+![List of APIs](https://user-images.githubusercontent.com/87942579/127224377-8fceb1cc-6dee-4e3a-b544-57053b34b31e.PNG)
+
+![AddProduct](https://user-images.githubusercontent.com/87942579/127224229-61fb8655-3d3b-4c83-83fb-d0d3a6c249b2.PNG)
+
+![AddStock](https://user-images.githubusercontent.com/87942579/127224302-3b1204a0-3894-434d-a023-2495ac595a6d.PNG)
+
+![BookProduct](https://user-images.githubusercontent.com/87942579/127224319-ff516f7a-1792-40bf-96e7-4d29354a475a.PNG)
+
+![GetProductByID](https://user-images.githubusercontent.com/87942579/127224342-3b9fb564-e288-4365-94fb-fb9c263c29cc.PNG)
+
+![GetProducts](https://user-images.githubusercontent.com/87942579/127224361-6a56edfa-d7e5-4d36-88b1-668de3ae3d20.PNG)
+
+![UpdateProduct](https://user-images.githubusercontent.com/87942579/127224427-e320a13e-6ecc-489e-8c32-e77dd9095557.PNG)
+
+![UploadImage](https://user-images.githubusercontent.com/87942579/127224445-35200b47-85d2-499f-b94a-64f3b2684d9f.PNG)
+
